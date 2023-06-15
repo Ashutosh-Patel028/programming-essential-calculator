@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
-import BinToDecConverter from './components/BinToDecConverter';
-import BinaryOperations from './components/BinaryOperations';
-import Factorial from './components/Factorial';
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+
 function App() {
- 
   return (
-    <div className='container'>
-      <h1>Programming-Essential-Calculator</h1>
-      <BinToDecConverter/>
-      <BinaryOperations/>
-      <Factorial/>
+    <div className="min-h-screen">
+      <Header/>
+      <Body/>
+      <Footer/>
     </div>
   );
 }
