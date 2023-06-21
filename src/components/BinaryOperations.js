@@ -42,14 +42,14 @@ function BinaryOperations(){
         <div className='m-2 bg-slate-400 p-3 w-1/2 rounded-md text-center text-lg'>
             <h2 className='font-serif font-bold p-1'>Binary Operator Operations</h2>
             <input className='rounded-md m-2 p-1 focus:outline-purple-400' placeholder='enter first number' onChange={ handleFirstNumberChange } ></input>
-            <select className='rounded-md p-1 m-1 focus:outline-lime-400' id='Operator' onChange={handleOperatorChange}>
+            <select className='rounded-md p-1 m-1 focus:outline-lime-400 font-mono' id='Operator' onChange={handleOperatorChange}>
                 <option id='OR'>OR(|)</option>
                 <option id='AND'>AND(&)</option>
                 <option id='NOT'>NOT(!)</option>
                 <option id='XOR'>XOR(^)</option>
             </select>
             <input className='rounded-md m-2 p-1 focus:outline-purple-400' placeholder='enter second number' onChange={handleSecondNumberChange}></input>
-            <label>{result}</label>
+            <label className='font-mono'>{result}</label>
         </div>
     );
 }
